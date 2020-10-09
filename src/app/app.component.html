@@ -1,0 +1,15 @@
+<div id="container" class="container">
+  <div id="map-box" class="map-box">
+
+  </div>
+  <form>
+    <fieldset>
+      <legend>Coordenadas de Posición</legend>
+      <label>Latitud:</label>
+      <input type="text" placeholder="Latitud" [(ngModel)]="latitud" [ngModelOptions]="{standalone: true}" disabled>
+      <label>Longitud:</label>
+      <input type="text" placeholder="Longitud" [(ngModel)]="longitud" [ngModelOptions]="{standalone: true}" disabled>
+      <a [href]="route" target="_blank" class="btn btn-success">Abrir coordenadas en Google Maps</a>
+    </fieldset>
+  </form>
+</div>
